@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1>Your local temp</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+  </p>
+    <p ng-hide="showme" ng-if=status>It is: {{temp - 273.15 | number:1}}&deg; Celcius</p>
+    <p ng-show="showme" ng-if=status>It is: {{(9/5) * (temp - 273.15) + 32 | number:1}}&deg; Farhenheit</p>
+  <div class="btn-group" data-toggle="buttons">
+  <p>
+    <label class="btn btn-primary" ng-click="showme=true">F</label>
+    <label class="btn btn-primary" ng-click="showme=false">C</label>
+  </p>
+  </div>
+</div>
