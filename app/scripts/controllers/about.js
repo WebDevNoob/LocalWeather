@@ -8,10 +8,10 @@
  * Controller of the localWeatherApp
  */
 angular.module('localWeatherApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+  .controller('AboutCtrl', function ($scope) {
+    $scope.awesomeThings = [
+      'Simple Local Weather App',
+      'Allows Searching by Zipcode',
+      'Toggle Between Celcius & Farhenheit'
     ];
   });
